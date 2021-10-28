@@ -1,0 +1,73 @@
+body{
+    background-image: repeating-linear-gradient(90deg, #fff 3px, #fff 50px,#C63E43 50px,#c63E43 100px);
+    margin:10px;
+    padding:0;
+    text-align:left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;   
+}
+
+
+header{
+    letter-spacing: 20px;
+    text-align: center;
+    color:#000000;
+}
+main{
+    font-size: 25px;
+    border: 10px;
+    border:5px dashed #fff;
+    background-color: #8da9f1;
+}
+
+p{
+    font-size:200%;
+    text-align: center;
+    height:150px;
+}
+ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+}
+li{
+    font-family: serif;
+    font-weight: bold;
+    text-align: center;
+    list-style-type:none;
+    border: 10px solid #666;
+    background-color: #FFF;
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+}
+li:hover{
+    background: rgb(74, 102, 180);
+    color:#fff;
+}
+
+h1{
+    font-family: serif;
+    font-size: 60px;
+    border:10px double #644223 ;
+    display: inline-block;
+    background-color: #d49961;
+}
+
+h2{
+    font-family: serif;
+    font-size: 40px;
+    margin-top: -50px;
+    border:10px double #644223 ;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+    background-color: #d49961;
+}
+
+h6{
+    font-family: serif;
+    font-size: 30px;
+    margin-top: 30px;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/fortune.css">
+<title>最終課題</title>
+</head>
+<body>
+
+<header>
+  <h1>Today's FORTUNE</h1>
+</header>
+<main>
+    <h2>1~3の順番にクリックしてください</h2>
+  <ul>
+    <li id="iro_btn"><img src="iro.jpg"></li> 
+    <li id="mono_btn"><img src="mono.jpg"></li>
+    <li id="kekka_btn"><img src="kekka.jpg"></li>
+  </ul>
+  <div>今日の<span id="pc_fortune">運勢は？…</span></div>
+  <div id="judgment"></div>
+</main>
+
+<footer></footer>
+<script>
+//運勢用のSCRIPTを書いてください
+$("#echo1").fadeOut(1000).fadeIn(1000000);
+$("#iro_btn").on("click", function(){
+    //ラッキーカラーの場合
+    const span = Math.ceil(Math.random() * 7);
+     if(span == 1){
+        $("#pc_fortune").html('<img src="aka.png" width="60" height="60">');
+        $("#judgment").html("ラッキーカラーは赤です");
+        $("#judgment").css("color","rgb(193,57,15)");
+     }
+     if(span == 2){
+        $("#pc_fortune").html('<img src="ao.png" width="60" height="60">');
+        $("#judgment").html("ラッキーカラーは青です");
+        $("#judgment").css("color","rgb(65,131,219)");
+     }
+     if(span == 3){
+        $("#pc_fortune").html('<img src="kiiro.png" width="60" height="60">');
+        $("#judgment").html("ラッキーカラーは黄色です");
+        $("#judgment").css("color","rgb(235,241,115)");
+     }        
+     if(span == 4){
+        $("#pc_fortune").html('<img src="midori.png" width="60" height="60">');
+        $("#judgment").html("ラッキーカラーは緑です");
+        $("#judgment").css("color","rgb(146,208,80)");
+     }   
+     if(span == 5){
+        $("#pc_fortune").html('<img src="murasaki.png" width="60" height="60">');
+        $("#judgment").html("ラッキーカラーは紫です");
+        $("#judgment").css("color","rgb(174,129,223)");
+     }             
+     if(span == 6){
+        $("#pc_fortune").html('<img src="orange.png" width="60" height="60">');
+        $("#judgment").html("ラッキーカラーはオレンジです");
+        $("#judgment").css("color","rgb(255,192,0)");
+     }        
+     if(span == 7){
+        $("#pc_fortune").html('<img src="pink.png" width="60" height="60">');
+        $("#judgment").html("ラッキーカラーはピンクです");
+        $("#judgment").css("color","rgb(237,169,224)");
+     }        
+})
+$("#mono_btn").on("click", function(){
+    //ラッキーアイテムの場合
+    const span = Math.ceil(Math.random() * 6);
+     if(span == 1){
+        $("#pc_fortune").html('<img src="megane.png" width="60" height="60">');
+        $("#judgment").html("ラッキーアイテムは眼鏡です");
+        $("#judgment").css("color","#000000");
+     }
+     if(span == 2){
+        $("#pc_fortune").html('<img src="shoes.jpeg" width="60" height="60">');
+        $("#judgment").html("ラッキーアイテムはスニーカーです");
+        $("#judgment").css("color","#000000");
+     }
+     if(span == 3){
+        $("#pc_fortune").html('<img src="hat.jpg" width="60" height="60">');
+        $("#judgment").html("ラッキーアイテムは帽子です");
+        $("#judgment").css("color","#000000");
+     }        
+     if(span == 4){
+        $("#pc_fortune").html('<img src="tokei.png" width="60" height="60">');
+        $("#judgment").html("ラッキーアイテムは置き時計です");
+        $("#judgment").css("color","#000000");
+     }        
+     if(span == 5){
+        $("#pc_fortune").html('<img src="kagami.png" width="60" height="60">');
+        $("#judgment").html("ラッキーアイテムは手鏡です");
+        $("#judgment").css("color","#000000");
+     }        
+     if(span == 6){
+        $("#pc_fortune").html('<img src="lip.png" width="60" height="60">');
+        $("#judgment").html("ラッキーアイテムはリップです");
+        $("#judgment").css("color","#000000");
+     }        
+})
+
+$("#kekka_btn").on("click", function(){
+    //運勢結果の場合
+    const span = Math.ceil(Math.random() * 7);
+     if(span == 1){
+        $("#pc_fortune").html("運勢結果は…");
+        $("#judgment").html("ハプニングが全部チャンスにつながるでしょう。");
+        $("#judgment").css("color","#000000");
+     }
+     if(span == 2){
+        $("#pc_fortune").html("運勢結果は…");
+        $("#judgment").html("遠慮しないで思っていることを伝えると願いが叶うでしょう。");
+        $("#judgment").css("color","#000000");
+     }
+     if(span == 3){
+        $("#pc_fortune").html("運勢結果は…");
+        $("#judgment").html("やることなすこと全部上手く行かない日です。");
+        $("#judgment").css("color","#000000");
+     }        
+     if(span == 4){
+        $("#pc_fortune").html("運勢結果は…");
+        $("#judgment").html("変化を取り入れると素敵な出会いがあるでしょう。");
+        $("#judgment").css("color","#000000");
+     }        
+     if(span == 5){
+        $("#pc_fortune").html("運勢結果は…");
+        $("#judgment").html("後ろ向きだとチャンスを逃すでしょう。");
+        $("#judgment").css("color","#000000");
+     }        
+     if(span == 6){
+        $("#pc_fortune").html("運勢結果は…");
+        $("#judgment").html("経験と勘や想像力が大いに役立つでしょう。");
+        $("#judgment").css("color","#000000");
+     }        
+     if(span == 7){
+        $("#pc_fortune").html("運勢結果は…");
+        $("#judgment").html("甘えた態度で嫌われる恐れがあるでしょう。");
+        $("#judgment").css("color","#000000");
+     }        
+})
+</script>
+</body>
+</html>
